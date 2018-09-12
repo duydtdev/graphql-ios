@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WTk-9v-gzf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roundedmplusbold.ttf">
+            <string>rounded-x-mplus-2c-bold</string>
+        </array>
+        <array key="roundedmplusregular.ttf">
+            <string>rounded-mplus-1p-regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--City Controller-->
+        <scene sceneID="HxX-hD-rEg">
+            <objects>
+                <tableViewController id="80M-4c-7DA" customClass="CityController" customModule="CitizenshipStatistics" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Wxw-74-GrR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityCell" rowHeight="189" id="S5T-fu-fI8" customClass="CityCell" customModule="CitizenshipStatistics" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="189"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S5T-fu-fI8" id="6OH-Gm-MUr">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="188.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q41-Og-fxf">
+                                            <rect key="frame" x="13" y="11" width="354" height="172"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IGK-qA-ycu">
+                                                    <rect key="frame" x="11" y="8" width="332" height="155"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uOy-GE-t5n">
+                                                            <rect key="frame" x="0.0" y="0.0" width="332" height="25"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEi-vU-YIZ">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="25"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="25" id="EmC-Y6-J3O"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="rounded-x-mplus-2c-bold" family="Rounded-X M+ 2c" pointSize="16"/>
+                                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 6°01′55″N 108°13′14″E" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4n-xR-shC">
+                                                                    <rect key="frame" x="150" y="0.0" width="182" height="25"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="25" id="HBD-rV-IjV"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="rounded-mplus-1p-regular" family="Rounded M+ 1p" pointSize="16"/>
+                                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8p-kh-WAD">
+                                                            <rect key="frame" x="0.0" y="30" width="332" height="60"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hX-6W-Yl9" customClass="InputAreaView" customModule="CitizenshipStatistics" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="166" height="60"/>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Area (km²)"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="canEditable" value="NO"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pun-S2-ASD" customClass="InputAreaView" customModule="CitizenshipStatistics" customModuleProvider="target">
+                                                                    <rect key="frame" x="166" y="0.0" width="166" height="60"/>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Population"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="canEditable" value="NO"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="9hX-6W-Yl9" firstAttribute="top" secondItem="T8p-kh-WAD" secondAttribute="top" id="1YL-sY-MNX"/>
+                                                                <constraint firstAttribute="bottom" secondItem="Pun-S2-ASD" secondAttribute="bottom" id="Bbg-UO-JOf"/>
+                                                                <constraint firstAttribute="bottom" secondItem="9hX-6W-Yl9" secondAttribute="bottom" id="F92-DD-5MX"/>
+                                                                <constraint firstItem="Pun-S2-ASD" firstAttribute="width" secondItem="9hX-6W-Yl9" secondAttribute="width" id="GJK-cl-FdA"/>
+                                                                <constraint firstItem="Pun-S2-ASD" firstAttribute="top" secondItem="T8p-kh-WAD" secondAttribute="top" id="TgO-aD-3UP"/>
+                                                                <constraint firstItem="9hX-6W-Yl9" firstAttribute="leading" secondItem="T8p-kh-WAD" secondAttribute="leading" id="aiU-rm-Hi1"/>
+                                                                <constraint firstItem="Pun-S2-ASD" firstAttribute="leading" secondItem="9hX-6W-Yl9" secondAttribute="trailing" id="iQl-an-hGz"/>
+                                                                <constraint firstItem="Pun-S2-ASD" firstAttribute="height" secondItem="9hX-6W-Yl9" secondAttribute="height" id="oYe-SK-ncm"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Pun-S2-ASD" secondAttribute="trailing" id="qff-ph-rfj"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7eq-BX-2pY">
+                                                            <rect key="frame" x="0.0" y="95" width="332" height="60"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iz0-6k-6wd" customClass="InputAreaView" customModule="CitizenshipStatistics" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="166" height="60"/>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Zipcode"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="canEditable" value="NO"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3eE-1b-252" customClass="InputAreaView" customModule="CitizenshipStatistics" customModuleProvider="target">
+                                                                    <rect key="frame" x="166" y="0.0" width="166" height="60"/>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Year"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="canEditable" value="NO"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="3eE-1b-252" firstAttribute="leading" secondItem="Iz0-6k-6wd" secondAttribute="trailing" id="5Ee-Kp-GgQ"/>
+                                                                <constraint firstItem="3eE-1b-252" firstAttribute="top" secondItem="7eq-BX-2pY" secondAttribute="top" id="BxO-JP-HZD"/>
+                                                                <constraint firstAttribute="trailing" secondItem="3eE-1b-252" secondAttribute="trailing" id="FTE-BM-3lm"/>
+                                                                <constraint firstItem="Iz0-6k-6wd" firstAttribute="leading" secondItem="7eq-BX-2pY" secondAttribute="leading" id="IOw-Zp-hfV"/>
+                                                                <constraint firstAttribute="bottom" secondItem="Iz0-6k-6wd" secondAttribute="bottom" id="PwN-hl-CGs"/>
+                                                                <constraint firstAttribute="height" constant="60" id="YNe-fb-fDt"/>
+                                                                <constraint firstItem="Iz0-6k-6wd" firstAttribute="top" secondItem="7eq-BX-2pY" secondAttribute="top" id="iQt-TN-rB1"/>
+                                                                <constraint firstAttribute="bottom" secondItem="3eE-1b-252" secondAttribute="bottom" id="if3-qV-fqf"/>
+                                                                <constraint firstItem="3eE-1b-252" firstAttribute="width" secondItem="Iz0-6k-6wd" secondAttribute="width" id="l37-7C-ypK"/>
+                                                                <constraint firstAttribute="width" constant="332" id="lo2-Nb-t56"/>
+                                                                <constraint firstItem="3eE-1b-252" firstAttribute="height" secondItem="Iz0-6k-6wd" secondAttribute="height" id="ro3-cS-kEH"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="IGK-qA-ycu" secondAttribute="bottom" constant="9" id="GCB-AH-z3V"/>
+                                                <constraint firstItem="IGK-qA-ycu" firstAttribute="leading" secondItem="Q41-Og-fxf" secondAttribute="leading" constant="11" id="Thg-z8-Kup"/>
+                                                <constraint firstItem="IGK-qA-ycu" firstAttribute="top" secondItem="Q41-Og-fxf" secondAttribute="top" constant="8" id="acX-YS-ISQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="IGK-qA-ycu" secondAttribute="trailing" constant="11" id="kF3-hK-vBg"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Q41-Og-fxf" secondAttribute="trailing" constant="13" id="FbV-fH-PIL"/>
+                                        <constraint firstItem="Q41-Og-fxf" firstAttribute="leading" secondItem="6OH-Gm-MUr" secondAttribute="leading" constant="13" id="GyV-SX-Omy"/>
+                                        <constraint firstItem="Q41-Og-fxf" firstAttribute="top" secondItem="6OH-Gm-MUr" secondAttribute="top" constant="11" id="W2r-3a-tvK"/>
+                                        <constraint firstAttribute="bottom" secondItem="Q41-Og-fxf" secondAttribute="bottom" constant="5.5" id="pd6-0I-dQp"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="areaInputAreaView" destination="9hX-6W-Yl9" id="JGA-mK-bmy"/>
+                                    <outlet property="cityLabel" destination="WEi-vU-YIZ" id="Bmk-AZ-l0r"/>
+                                    <outlet property="containView" destination="Q41-Og-fxf" id="vzR-7f-F9b"/>
+                                    <outlet property="coordinateLabel" destination="L4n-xR-shC" id="CNg-dK-HTH"/>
+                                    <outlet property="populationInputAreaView" destination="Pun-S2-ASD" id="Jbi-4N-CCg"/>
+                                    <outlet property="yearInputAreaView" destination="3eE-1b-252" id="bfG-oQ-UlU"/>
+                                    <outlet property="zipInputAreaView" destination="Iz0-6k-6wd" id="Ct1-Oc-iOh"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="80M-4c-7DA" id="LZA-Xk-QmE"/>
+                            <outlet property="delegate" destination="80M-4c-7DA" id="GPq-Hd-1uG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="EvV-ci-Wuc"/>
+                    <connections>
+                        <outlet property="cityTableView" destination="Wxw-74-GrR" id="q7v-Mz-p5h"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y9C-6I-0Re" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1224.8" y="-107.49625187406298"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bRf-uH-IxU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WTk-9v-gzf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qia-ec-sdL">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="80M-4c-7DA" kind="relationship" relationship="rootViewController" id="7iv-uH-7fz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gMW-ES-Pch" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="285.60000000000002" y="-107.49625187406298"/>
+        </scene>
+        <!--Add City Controller-->
+        <scene sceneID="xon-un-z1G">
+            <objects>
+                <viewController storyboardIdentifier="AddCityController" id="U1d-cU-cU7" customClass="AddCityController" customModule="CitizenshipStatistics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zJU-WQ-NHM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="neC-f8-STd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzv-pM-2ZA">
+                                        <rect key="frame" x="13" y="14" width="349" height="275"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FDh-6l-6lp">
+                                                <rect key="frame" x="8" y="13" width="332" height="250"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f15-KV-PR9">
+                                                        <rect key="frame" x="66" y="0.0" width="200" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="42l-vd-qod"/>
+                                                            <constraint firstAttribute="height" constant="40" id="SyK-BT-eaI"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="rounded-x-mplus-2c-bold" family="Rounded-X M+ 2c" pointSize="24"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5o-gS-tDe">
+                                                        <rect key="frame" x="0.0" y="50" width="332" height="60"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsH-mI-VG2" customClass="InputAreaView" customModule="CitizenshipStatistics" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="166" height="60"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Name"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2S-H6-EWZ" customClass="InputAreaView" customModule="CitizenshipStatistics" customModuleProvider="target">
+                                                                <rect key="frame" x="166" y="0.0" width="166" height="60"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Coordinate"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="F2S-H6-EWZ" firstAttribute="width" secondItem="gsH-mI-VG2" secondAttribute="width" id="4AU-pf-Pcs"/>
+                                                            <constraint firstItem="F2S-H6-EWZ" firstAttribute="leading" secondItem="gsH-mI-VG2" secondAttribute="trailing" id="VMv-dA-962"/>
+                                                            <constraint firstItem="F2S-H6-EWZ" firstAttribute="height" secondItem="gsH-mI-VG2" secondAttribute="height" id="Vml-P7-sEk"/>
+                                                            <constraint firstAttribute="height" constant="60" id="t9L-Mf-9K0"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPT-ou-Mdz">
+                                                        <rect key="frame" x="0.0" y="120" width="332" height="60"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMP-rK-kUL" customClass="InputAreaView" customModule="CitizenshipStatistics" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="166" height="60"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Area (km²)"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPG-WS-xE5" customClass="InputAreaView" customModule="CitizenshipStatistics" customModuleProvider="target">
+                                                                <rect key="frame" x="166" y="0.0" width="166" height="60"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Population"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="rPG-WS-xE5" secondAttribute="trailing" id="5w4-A5-mpa"/>
+                                                            <constraint firstAttribute="height" constant="60" id="Hma-3d-emG"/>
+                                                            <constraint firstAttribute="bottom" secondItem="rPG-WS-xE5" secondAttribute="bottom" id="VjT-vX-LLu"/>
+                                                            <constraint firstItem="rPG-WS-xE5" firstAttribute="height" secondItem="OMP-rK-kUL" secondAttribute="height" id="auF-6D-nVK"/>
+                                                            <constraint firstAttribute="bottom" secondItem="OMP-rK-kUL" secondAttribute="bottom" id="c34-Pw-mpw"/>
+                                                            <constraint firstItem="rPG-WS-xE5" firstAttribute="leading" secondItem="OMP-rK-kUL" secondAttribute="trailing" id="ksC-8i-d2p"/>
+                                                            <constraint firstItem="rPG-WS-xE5" firstAttribute="top" secondItem="hPT-ou-Mdz" secondAttribute="top" id="rth-0h-3po"/>
+                                                            <constraint firstItem="rPG-WS-xE5" firstAttribute="width" secondItem="OMP-rK-kUL" secondAttribute="width" id="stl-If-yUX"/>
+                                                            <constraint firstItem="OMP-rK-kUL" firstAttribute="top" secondItem="hPT-ou-Mdz" secondAttribute="top" id="wwj-2r-Muw"/>
+                                                            <constraint firstItem="OMP-rK-kUL" firstAttribute="leading" secondItem="hPT-ou-Mdz" secondAttribute="leading" id="zYt-d2-umd"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibw-Yx-9aa">
+                                                        <rect key="frame" x="0.0" y="190" width="332" height="60"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Orf-qN-Gh7" customClass="InputAreaView" customModule="CitizenshipStatistics" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="166" height="60"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Zipcode"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I7N-yB-bHZ" customClass="InputAreaView" customModule="CitizenshipStatistics" customModuleProvider="target">
+                                                                <rect key="frame" x="166" y="0.0" width="166" height="60"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Year"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="Orf-qN-Gh7" firstAttribute="top" secondItem="ibw-Yx-9aa" secondAttribute="top" id="0zf-Mp-a9U"/>
+                                                            <constraint firstAttribute="trailing" secondItem="I7N-yB-bHZ" secondAttribute="trailing" id="8iM-2a-5ZV"/>
+                                                            <constraint firstItem="I7N-yB-bHZ" firstAttribute="top" secondItem="ibw-Yx-9aa" secondAttribute="top" id="EUd-fl-Gcb"/>
+                                                            <constraint firstItem="I7N-yB-bHZ" firstAttribute="width" secondItem="Orf-qN-Gh7" secondAttribute="width" id="LmG-IE-ZyK"/>
+                                                            <constraint firstItem="I7N-yB-bHZ" firstAttribute="height" secondItem="Orf-qN-Gh7" secondAttribute="height" id="XUr-40-zgb"/>
+                                                            <constraint firstAttribute="bottom" secondItem="I7N-yB-bHZ" secondAttribute="bottom" id="d4B-sR-5KK"/>
+                                                            <constraint firstItem="I7N-yB-bHZ" firstAttribute="leading" secondItem="Orf-qN-Gh7" secondAttribute="trailing" id="nai-q0-UR2"/>
+                                                            <constraint firstItem="Orf-qN-Gh7" firstAttribute="leading" secondItem="ibw-Yx-9aa" secondAttribute="leading" id="wQk-JE-JQg"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Orf-qN-Gh7" secondAttribute="bottom" id="xut-EG-w39"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="ibw-Yx-9aa" firstAttribute="top" secondItem="hPT-ou-Mdz" secondAttribute="bottom" constant="10" id="7d5-qK-NN7"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ibw-Yx-9aa" secondAttribute="bottom" id="AjU-SX-7so"/>
+                                                    <constraint firstItem="hPT-ou-Mdz" firstAttribute="leading" secondItem="FDh-6l-6lp" secondAttribute="leading" id="KSb-Zb-g0D"/>
+                                                    <constraint firstItem="f15-KV-PR9" firstAttribute="top" secondItem="FDh-6l-6lp" secondAttribute="top" id="Njl-jp-N81"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ibw-Yx-9aa" secondAttribute="trailing" id="S5k-3A-c5z"/>
+                                                    <constraint firstItem="N5o-gS-tDe" firstAttribute="top" secondItem="f15-KV-PR9" secondAttribute="bottom" constant="10" id="SCL-32-TDq"/>
+                                                    <constraint firstAttribute="trailing" secondItem="N5o-gS-tDe" secondAttribute="trailing" id="YVw-nt-4Qj"/>
+                                                    <constraint firstItem="N5o-gS-tDe" firstAttribute="leading" secondItem="FDh-6l-6lp" secondAttribute="leading" id="boO-Ku-e6N"/>
+                                                    <constraint firstItem="ibw-Yx-9aa" firstAttribute="leading" secondItem="FDh-6l-6lp" secondAttribute="leading" id="mEf-5Q-Q7J"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hPT-ou-Mdz" secondAttribute="trailing" id="rzm-J0-Klk"/>
+                                                    <constraint firstItem="f15-KV-PR9" firstAttribute="centerX" secondItem="FDh-6l-6lp" secondAttribute="centerX" id="zhr-rH-RRd"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="FDh-6l-6lp" firstAttribute="leading" secondItem="bzv-pM-2ZA" secondAttribute="leading" constant="8" id="H6r-Jd-cIh"/>
+                                            <constraint firstItem="FDh-6l-6lp" firstAttribute="top" secondItem="bzv-pM-2ZA" secondAttribute="top" constant="13" id="a8D-hI-VUF"/>
+                                            <constraint firstAttribute="bottom" secondItem="FDh-6l-6lp" secondAttribute="bottom" constant="12" id="b2L-5y-fkc"/>
+                                            <constraint firstAttribute="trailing" secondItem="FDh-6l-6lp" secondAttribute="trailing" constant="9" id="dbk-lQ-3OA"/>
+                                            <constraint firstAttribute="height" constant="275" id="jW3-Le-Vdi"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htV-W4-f85" customClass="RoundButton" customModule="CitizenshipStatistics" customModuleProvider="target">
+                                        <rect key="frame" x="74" y="311" width="227" height="40"/>
+                                        <color key="backgroundColor" red="0.2278960645" green="0.8486452699" blue="0.55606311559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="PB5-3W-Eru"/>
+                                            <constraint firstAttribute="width" constant="227" id="xIf-hR-B93"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="rounded-x-mplus-2c-bold" family="Rounded-X M+ 2c" pointSize="15"/>
+                                        <state key="normal" title="ADD">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="addCity:" destination="U1d-cU-cU7" eventType="touchUpInside" id="yZT-Wg-SUE"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WVM-d0-q9U">
+                                        <rect key="frame" x="67" y="406" width="240" height="128"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="h01-hd-y4T"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bzv-pM-2ZA" firstAttribute="top" secondItem="neC-f8-STd" secondAttribute="top" constant="14" id="1D6-ZR-Lb7"/>
+                                    <constraint firstAttribute="bottom" secondItem="WVM-d0-q9U" secondAttribute="bottom" constant="69" id="3vb-gX-BKc"/>
+                                    <constraint firstItem="htV-W4-f85" firstAttribute="top" secondItem="bzv-pM-2ZA" secondAttribute="bottom" constant="22" id="8nI-Lv-a3T"/>
+                                    <constraint firstItem="bzv-pM-2ZA" firstAttribute="leading" secondItem="neC-f8-STd" secondAttribute="leading" constant="13" id="PRT-LY-1Ry"/>
+                                    <constraint firstAttribute="trailing" secondItem="WVM-d0-q9U" secondAttribute="trailing" constant="68" id="W5B-dO-XjL"/>
+                                    <constraint firstItem="htV-W4-f85" firstAttribute="centerX" secondItem="neC-f8-STd" secondAttribute="centerX" id="aPV-Ud-9ij"/>
+                                    <constraint firstItem="WVM-d0-q9U" firstAttribute="top" secondItem="htV-W4-f85" secondAttribute="bottom" constant="55" id="fU4-S0-z25"/>
+                                    <constraint firstAttribute="trailing" secondItem="bzv-pM-2ZA" secondAttribute="trailing" constant="13" id="san-pk-UXf"/>
+                                    <constraint firstItem="WVM-d0-q9U" firstAttribute="centerX" secondItem="htV-W4-f85" secondAttribute="centerX" id="uNq-9q-X3F"/>
+                                    <constraint firstItem="WVM-d0-q9U" firstAttribute="leading" secondItem="neC-f8-STd" secondAttribute="leading" constant="67" id="x9n-cY-sOQ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="neC-f8-STd" firstAttribute="leading" secondItem="Cvk-OL-JEE" secondAttribute="leading" id="Xxu-FC-kCZ"/>
+                            <constraint firstItem="neC-f8-STd" firstAttribute="top" secondItem="Cvk-OL-JEE" secondAttribute="top" id="fLW-lM-foS"/>
+                            <constraint firstItem="neC-f8-STd" firstAttribute="trailing" secondItem="Cvk-OL-JEE" secondAttribute="trailing" id="rb2-yI-BG9"/>
+                            <constraint firstItem="neC-f8-STd" firstAttribute="bottom" secondItem="Cvk-OL-JEE" secondAttribute="bottom" id="wfa-yp-WU5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cvk-OL-JEE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="q4P-ax-VYh"/>
+                    <connections>
+                        <outlet property="areaInputAreaView" destination="OMP-rK-kUL" id="Dyw-Ni-9sK"/>
+                        <outlet property="containView" destination="bzv-pM-2ZA" id="I1r-o9-p8P"/>
+                        <outlet property="coordinateInputAreaView" destination="F2S-H6-EWZ" id="wp6-RI-hVN"/>
+                        <outlet property="nameInputAreaView" destination="gsH-mI-VG2" id="hJH-kA-WyG"/>
+                        <outlet property="populationInputAreaView" destination="rPG-WS-xE5" id="pOp-f6-1BA"/>
+                        <outlet property="yearInputAreaView" destination="I7N-yB-bHZ" id="5cV-Ze-UY1"/>
+                        <outlet property="zipInputAreaView" destination="Orf-qN-Gh7" id="WVW-dQ-Wko"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3zS-ll-1Ku" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2967.1999999999998" y="-81.409295352323838"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Uxy-Xf-yNC">
+            <objects>
+                <navigationController storyboardIdentifier="AddCityNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="lT3-4G-v6i" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vwa-gH-YG7">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="U1d-cU-cU7" kind="relationship" relationship="rootViewController" id="bgp-jg-ulu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ut4-af-PBE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2028" y="-81.409295352323838"/>
+        </scene>
+    </scenes>
+</document>

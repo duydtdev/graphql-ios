@@ -1,0 +1,23 @@
+query AllCities {
+  allCities {
+    id
+    name
+    population
+    coordinate
+    area
+    zip
+    year
+  }
+}
+
+mutation CreateCity($area: Int!, $coordinate: String!, $name: String!, $population: Int!, $year: String!, $zip: String!) {
+    createCity(area: $area, coordinate: $coordinate, name: $name, population: $population, year: $year, zip: $zip, countryId: "cjgf20u3n5huq0130kgc4e6hs") {
+    id
+    name
+    population
+    coordinate
+    area
+    zip
+    year
+  }
+}

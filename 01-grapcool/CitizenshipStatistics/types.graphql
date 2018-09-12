@@ -1,0 +1,32 @@
+type Account @model {
+  id: String! @isUnique
+  firstname: String!
+  lastname: String!
+  gender: String!
+  phone: String!
+  email: String! @isUnique
+  password: String!
+  token: String!
+}
+
+type Country @model {
+  id: String! @isUnique
+  name: String!
+  area: Int!
+  population: Int!
+  flag: String!
+  cities: [City!]! @relation(name: "CountryCities")
+  year: String!
+}
+
+
+type City @model {
+  id: String! @isUnique
+  name: String!
+  coordinate: String!
+  area: Int!
+  population: Int!
+  zip: String!
+  year: String!
+  country: Country! @relation(name: "CountryCities")
+}

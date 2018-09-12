@@ -1,0 +1,13 @@
+{
+  "commitish" : "0.8.0",
+  "iOS" : [
+    {
+      "name" : "ApolloSQLite",
+      "hash" : "0ef3107838180f2c7e0b182591c73923b38f862d19098b0c6733b0702912a7dc"
+    },
+    {
+      "name" : "Apollo",
+      "hash" : "aca2d09e3c3ef5a761d8595b8a8fce4ddad0cc90c29081433a92e0180f0faab8"
+    }
+  ]
+}
